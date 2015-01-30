@@ -7,7 +7,7 @@ var graphics = d3.select("body")
 	.attr("height", height);
 
 // Don't forget to change the data file name!
-d3.json("DATAFILE", loadData);
+d3.json("data/uk.json", loadData);
 
 function loadData(error, dataset) {
 	if (error) {
@@ -20,4 +20,5 @@ function loadData(error, dataset) {
 
 function drawData(dataset) {
 	// Draw your data
+    console.log(dataset);
 }
